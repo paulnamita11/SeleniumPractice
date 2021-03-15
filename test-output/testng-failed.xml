@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ToolsQA.DemoSampleProject.test.FbLoginTest">
+      <class name="OAuth2.OAuth2Token">
         <methods>
-          <include name="initialize"/>
-          <include name="TearDownTest"/>
-          <include name="init"/>
+          <include name="TC_02"/>
         </methods>
-      </class> <!-- ToolsQA.DemoSampleProject.test.FbLoginTest -->
+      </class> <!-- OAuth2.OAuth2Token -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
