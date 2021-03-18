@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-15T22:02:02 IST" name="Default suite" finished-at="2021-03-15T22:02:09 IST" duration-ms="6608">
+  <suite started-at="2021-03-18T10:51:48 IST" name="Default suite" finished-at="2021-03-18T10:51:48 IST" duration-ms="117">
     <groups>
     </groups>
-    <test started-at="2021-03-15T22:02:02 IST" name="Default test" finished-at="2021-03-15T22:02:09 IST" duration-ms="6608">
-      <class name="OAuth2.OAuth2Token">
-        <test-method signature="TC_02()[pri:0, instance:OAuth2.OAuth2Token@2accdbb5]" started-at="2021-03-15T22:02:02 IST" name="TC_02" finished-at="2021-03-15T22:02:09 IST" duration-ms="6565" status="PASS">
+    <test started-at="2021-03-18T10:51:48 IST" name="Default test" finished-at="2021-03-18T10:51:48 IST" duration-ms="117">
+      <class name="Listeners.TestNGPriorityDemo">
+        <test-method signature="test2()[pri:-1, instance:Listeners.TestNGPriorityDemo@702b8b12]" started-at="2021-03-18T10:51:48 IST" name="test2" finished-at="2021-03-18T10:51:48 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02 -->
-      </class> <!-- OAuth2.OAuth2Token -->
+        </test-method> <!-- test2 -->
+        <test-method signature="test3()[pri:0, instance:Listeners.TestNGPriorityDemo@702b8b12]" started-at="2021-03-18T10:51:48 IST" name="test3" finished-at="2021-03-18T10:51:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method signature="test1()[pri:1, instance:Listeners.TestNGPriorityDemo@702b8b12]" started-at="2021-03-18T10:51:48 IST" name="test1" finished-at="2021-03-18T10:51:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- Listeners.TestNGPriorityDemo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
