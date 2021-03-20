@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="appURL" value="https://facebook.com"/>
-  <parameter name="browserType" value="chrome"/>
-  <listeners>
-    <listener class-name="com.ExtentReportExample.bases.TestListener"/>
-  </listeners>
-  <test thread-count="5" name="Test1(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.ExtentReportExmple.testcases.FbLoginTest">
         <methods>
@@ -14,8 +9,9 @@
           <include name="verifyHomePage"/>
           <include name="TearDownTest"/>
           <include name="LoginIntoFB"/>
+          <include name="baseTest1"/>
         </methods>
       </class> <!-- com.ExtentReportExmple.testcases.FbLoginTest -->
     </classes>
-  </test> <!-- Test1(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

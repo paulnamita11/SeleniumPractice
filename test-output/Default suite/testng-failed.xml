@@ -8,7 +8,8 @@
           <include name="setUp"/>
           <include name="verifyHomePage"/>
           <include name="TearDownTest"/>
-          <include name="init"/>
+          <include name="LoginIntoFB"/>
+          <include name="baseTest1"/>
         </methods>
       </class> <!-- com.ExtentReportExmple.testcases.FbLoginTest -->
     </classes>

@@ -33,8 +33,7 @@ public class FbLoginTest extends TestBase {
 	    public void setUp() throws IOException
 	    {
 	    	initialization();
-	    	//basePage = new FbLoginPage();
-			
+	    	basePage = new FbLoginPage();
 	    	
 	    }
 	    
@@ -60,15 +59,15 @@ public class FbLoginTest extends TestBase {
 	public void LoginIntoFB() throws Exception{
 		System.out.println("==============INSIDE INIT");
 		ExtentTestManager.getTest().log(Status.INFO, "Hellooo started base test");
-		InputStream input = new FileInputStream("/Users/namita_pm_pursuitsof/eclipse-workspace/ExtentReportExmple/src/main/java/configuration/config.properties");
-		prop.load(input);
-		FbLoginPage loginpage = PageFactory.initElements(driver, FbLoginPage.class);
+		//InputStream input = new FileInputStream("/Users/namita_pm_pursuitsof/eclipse-workspace/ExtentReportExmple/src/main/java/configuration/config.properties");
+		//prop.load(input);
+		//FbLoginPage loginpage = PageFactory.initElements(driver, FbLoginPage.class);
 		
-		loginpage.setEmail(prop.getProperty("email"));
+		basePage.setEmail(prop.getProperty("email"));
 		ExtentTestManager.getTest().log(Status.INFO, "emailId entered");
-		loginpage.setPassword(prop.getProperty("password")); 
+		basePage.setPassword(prop.getProperty("password")); 
 		ExtentTestManager.getTest().log(Status.INFO, "passowrd entered");
-		loginpage.ClickOnLoginButton();
+		basePage.ClickOnLoginButton();
 		ExtentTestManager.getTest().log(Status.INFO, "click on Login");
 		
 		 FbHomePage homepage = PageFactory.initElements(driver, FbHomePage.class);
